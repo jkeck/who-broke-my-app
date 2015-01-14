@@ -28,5 +28,5 @@ lockfile.specs.map do |gem|
   version = JSON.parse(versions).find do |v|
     v['number'] == gem.version.to_s && Time.parse(v['built_at']) > date
   end
-  puts "#{gem.name} was released on #{version['built_at']}" if version
+  puts "#{gem.name} #{version['number']} was released on #{version['built_at']}" if version
 end
