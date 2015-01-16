@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 require 'active_support/all'
 require 'json'
 require 'bundler'
@@ -21,7 +23,7 @@ end.parse!
 
 version_api = "https://rubygems.org/api/v1/versions"
 lockfile = Bundler::LockfileParser.new(Bundler.read_file(options[:path]))
-date = options[:days].to_i.days.ago
+date = Time.now - options[:days].to_i * 24*60*60
 
 lockfile.specs.map do |gem|
   versions = Faraday.get("#{version_api}/#{gem.name}.json").body
