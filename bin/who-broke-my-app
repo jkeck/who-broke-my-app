@@ -1,6 +1,5 @@
 #!/usr/bin/env ruby
 
-require 'active_support/all'
 require 'json'
 require 'bundler'
 require 'faraday'
