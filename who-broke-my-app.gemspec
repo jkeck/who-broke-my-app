@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "who-broke-my-app"
-  spec.version       = "0.0.1"
+  spec.version       = "0.0.2"
   spec.authors       = ["Jessie Keck"]
   spec.email         = ["jkeck@stanford.edu"]
   spec.summary       = %q{Simple ruby script to take a Gemfile.lock file and determine which dependencies have been recently updated.}

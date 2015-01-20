@@ -7,7 +7,7 @@ require 'optparse'
 
 options = {days: 1}
 OptionParser.new do |opts|
-  opts.banner = "Usage: who-broke-my-app.rb [options]"
+  opts.banner = "Usage: who-broke-my-app [options]"
 
   opts.on("-p [PATH]", "--path [PATH]", String, "Path to the Gemfile.lock") do |path|
     options[:path] = path
