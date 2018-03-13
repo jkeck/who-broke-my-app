@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 
 require 'json'
+require 'time'
 require 'bundler'
 require 'faraday'
 require 'optparse'
